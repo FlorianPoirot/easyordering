@@ -1,0 +1,20 @@
+{
+  "name": "easyordering",
+  "version": "1.0.0",
+  "description": "easyordering project",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlorianPoirot/easyordering.git"
+  },
+  "keywords": [],
+  "author": "Florain Poirot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FlorianPoirot/easyordering/issues"
+  },
+  "homepage": "https://github.com/FlorianPoirot/easyordering#readme"
+}
