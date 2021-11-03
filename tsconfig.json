@@ -4,7 +4,9 @@
     "target": "ES5",
     "noEmitOnError": true,
     "strict": true,
-    "noUncheckedIndexedAccess": true
+    "noUncheckedIndexedAccess": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
   "files": [
     "src/index.ts"
