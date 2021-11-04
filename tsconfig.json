@@ -20,6 +20,7 @@
       "noImplicitReturns": true,
       "allowSyntheticDefaultImports": true,
       "esModuleInterop": true,
-      "forceConsistentCasingInFileNames": true
+      "forceConsistentCasingInFileNames": true,
+      "baseUrl": "./src"
    }
 }
