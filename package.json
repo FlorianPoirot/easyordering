@@ -1,28 +1,37 @@
 {
-  "name": "easyordering",
-  "version": "1.0.0",
-  "description": "easyordering project",
-  "main": "src/index.js",
-  "scripts": {
-    "start": "nodemon src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/FlorianPoirot/easyordering.git"
-  },
-  "keywords": [],
-  "author": "Florain Poirot",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/FlorianPoirot/easyordering/issues"
-  },
-  "homepage": "https://github.com/FlorianPoirot/easyordering#readme",
-  "devDependencies": {
-    "nodemon": "^2.0.14",
-    "typescript": "^4.4.4"
-  },
-  "dependencies": {
-    "ts-node": "^10.4.0"
-  }
+   "name": "easyordering",
+   "version": "1.0.0",
+   "description": "easyordering project",
+   "main": "src/index.js",
+   "scripts": {
+      "start": "nodemon src/index.ts",
+      "typeorm:cli": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
+      "migration:run": "npm run typeorm:cli 'migration:run'",
+      "migration:gen": "npm run typeorm:cli 'migration:generate' -- -n",
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/FlorianPoirot/easyordering.git"
+   },
+   "keywords": [],
+   "author": "Florain Poirot",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/FlorianPoirot/easyordering/issues"
+   },
+   "homepage": "https://github.com/FlorianPoirot/easyordering#readme",
+   "devDependencies": {
+      "@types/node": "^8.0.29",
+      "nodemon": "^2.0.14",
+      "ts-node": "3.3.0",
+      "tsconfig-paths": "^3.11.0",
+      "typescript": "3.3.3333"
+   },
+   "dependencies": {
+      "pg": "^8.4.0",
+      "reflect-metadata": "^0.1.10",
+      "typeorm": "0.2.38"
+   },
+   "type": "module"
 }
