@@ -2,8 +2,6 @@ import "reflect-metadata";
 import {createConnection} from "typeorm";
 import User from "./entity/User";
 
-console.log('Hello')
-
 createConnection().then(async _ => {
     console.log("Inserting a new user into the database...");
     const user: any = {
