@@ -6,8 +6,8 @@
    "scripts": {
       "start": "nodemon src/index.ts",
       "typeorm:cli": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
-      "migration:run": "npm run typeorm:cli 'migration:run'",
-      "migration:gen": "npm run typeorm:cli 'migration:generate' -- -n",
+      "migration:migrate": "npm run typeorm:cli 'migration:run'",
+      "migration:diff": "npm run typeorm:cli 'migration:generate' -- -n",
       "test": "echo \"Error: no test specified\" && exit 1"
    },
    "repository": {
@@ -32,6 +32,5 @@
       "pg": "^8.4.0",
       "reflect-metadata": "^0.1.10",
       "typeorm": "0.2.38"
-   },
-   "type": "module"
+   }
 }
