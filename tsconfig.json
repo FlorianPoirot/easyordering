@@ -1,26 +1,23 @@
 {
-   "compilerOptions": {
-      "lib": [
-         "es5",
-         "es6"
-      ],
-      "target": "es5",
-      "module": "commonjs",
-      "moduleResolution": "node",
-      "outDir": "./dist",
-      "emitDecoratorMetadata": true,
-      "experimentalDecorators": true,
-      "sourceMap": true,
-      "noFallthroughCasesInSwitch": true,
-      "strictNullChecks": true,
-      "removeComments": false,
-      "downlevelIteration": true,
-      "noUnusedLocals": true,
-      "noUnusedParameters": true,
-      "noImplicitReturns": true,
-      "allowSyntheticDefaultImports": true,
-      "esModuleInterop": true,
-      "forceConsistentCasingInFileNames": true,
-      "baseUrl": "./src"
-   }
+  "compilerOptions": {
+    "lib": ["es5", "es6"],
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "noFallthroughCasesInSwitch": true,
+    "strictNullChecks": true,
+    "removeComments": false,
+    "downlevelIteration": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./src"
+  }
 }
