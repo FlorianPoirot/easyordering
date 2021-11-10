@@ -1,36 +1,45 @@
 {
-   "name": "easyordering",
-   "version": "1.0.0",
-   "description": "easyordering project",
-   "main": "src/index.js",
-   "scripts": {
-      "start": "nodemon src/index.ts",
-      "typeorm:cli": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
-      "migration:migrate": "npm run typeorm:cli 'migration:run'",
-      "migration:diff": "npm run typeorm:cli 'migration:generate' -- -n",
-      "test": "echo \"Error: no test specified\" && exit 1"
-   },
-   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/FlorianPoirot/easyordering.git"
-   },
-   "keywords": [],
-   "author": "Florain Poirot",
-   "license": "ISC",
-   "bugs": {
-      "url": "https://github.com/FlorianPoirot/easyordering/issues"
-   },
-   "homepage": "https://github.com/FlorianPoirot/easyordering#readme",
-   "devDependencies": {
-      "@types/node": "^8.0.29",
-      "nodemon": "^2.0.14",
-      "ts-node": "3.3.0",
-      "tsconfig-paths": "^3.11.0",
-      "typescript": "3.3.3333"
-   },
-   "dependencies": {
-      "pg": "^8.4.0",
-      "reflect-metadata": "^0.1.10",
-      "typeorm": "0.2.38"
-   }
+  "name": "easyordering",
+  "version": "1.0.0",
+  "description": "easyordering project",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.ts",
+    "typeorm:cli": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
+    "migration:migrate": "npm run typeorm:cli 'migration:run'",
+    "migration:diff": "npm run typeorm:cli 'migration:generate' -- -n",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "lint:fix:dry-run": "eslint . --ext .ts --fix-dry-run",
+    "prettier:fix": "prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlorianPoirot/easyordering.git"
+  },
+  "keywords": [],
+  "author": "Florain Poirot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FlorianPoirot/easyordering/issues"
+  },
+  "homepage": "https://github.com/FlorianPoirot/easyordering#readme",
+  "devDependencies": {
+    "@types/node": "^8.0.29",
+    "@typescript-eslint/eslint-plugin": "^5.3.0",
+    "@typescript-eslint/parser": "^5.3.0",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "nodemon": "^2.0.14",
+    "prettier": "2.4.1",
+    "ts-node": "3.3.0",
+    "tsconfig-paths": "^3.11.0",
+    "typescript": "3.3.3333"
+  },
+  "dependencies": {
+    "pg": "^8.4.0",
+    "reflect-metadata": "^0.1.10",
+    "typeorm": "0.2.38"
+  }
 }
